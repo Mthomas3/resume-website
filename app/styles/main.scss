@@ -1,10 +1,33 @@
-body > h1 {
-  color: black;
+@import "home.scss";
+@import "about.scss";
+
+@mixin reset(){
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+
+  font-size: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  list-style: none;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
-body {
-  height: 100vh;
-  width:100%;
-  background-image: url('../images/bird.jpg');
-  background-size: cover;
+@mixin initBody() {
+  font-size: 16px;
+  position: relative;
+  letter-spacing: 0.05em;
+  font-family: DINWebPro, Times, "Times New Roman", serif;
 }
+
+*{
+  @include reset();
+}
+
+body{
+  @include initBody();
+}
+
+@include SetSectionHome();
+@include SetSectionAbout();

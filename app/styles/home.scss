@@ -1,0 +1,75 @@
+@import "colors.scss";
+@import "genericMixin.scss";
+
+@mixin SetUpHomeButton() {
+  .scroll-button-entry{
+    position: absolute;
+    bottom: 4%;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid $grey;
+    border-bottom: 2px solid $grey;
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+    cursor: pointer;
+  }
+
+  .scrolling-title {
+    position: absolute;
+    bottom: 6%;
+    font-size: 1em;
+    width: 140px;
+    height: 20px;
+    color: $grey;
+    cursor: pointer;
+  }
+}
+
+@mixin SetSectionHome() {
+
+  .home{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $primary-color;
+    text-align: center;
+    @include SetSizeSection();
+  }
+
+
+  .landing-text {
+    position: relative;
+    color: $white;
+  }
+
+  .landing-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 250px;
+    margin-top: -125px;
+    cursor: pointer
+  }
+
+  .site-title {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 6em;
+    line-height: 1em;
+    text-shadow: 1px 1px 0px black;
+  }
+
+  .sub-site-title {
+    text-transform: uppercase;
+    font-size: 2em;
+    text-shadow: 1px 1px 0px black;
+    margin: 0 0 50px 0;
+    line-height: 1.8em
+  }
+
+  @include SetUpHomeButton();
+}

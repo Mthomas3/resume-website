@@ -1,0 +1,18 @@
+@import "genericMixin.scss";
+
+@mixin SetSectionAbout() {
+
+  .about {
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+
+
+    @include SetSizeSection();
+  }
+
+}
