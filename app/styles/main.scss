@@ -1,5 +1,6 @@
 @import "home.scss";
 @import "about.scss";
+@import "responsive.scss";
 
 @mixin reset(){
   margin: 0;
@@ -31,3 +32,4 @@ body{
 
 @include SetSectionHome();
 @include SetSectionAbout();
+@include SetResponsive();

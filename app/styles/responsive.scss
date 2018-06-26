@@ -1,0 +1,25 @@
+$phoneSize: 600px;
+$desktopSize: 992px;
+
+@mixin SetResponsiveHome() {
+
+  @media (max-width: $desktopSize) {
+    .site-title {
+      font-size: 3em;
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: $phoneSize) {
+    .site-title {
+      font-size: 2em;
+      margin-top: 50px;
+
+    }
+  }
+
+}
+
+@mixin SetResponsive() {
+  @include SetResponsiveHome();
+}

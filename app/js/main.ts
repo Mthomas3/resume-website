@@ -11,7 +11,7 @@ jQuery(function () {
 
         if (direction === 2) {
 
-            $("#section1").last().addClass("test")
+            //$("#section1").last().addClass("test")
             console.log(direction)
         }
 
@@ -24,6 +24,12 @@ jQuery(function () {
           doSomething(index, direction);
       }
 
+    })
+
+
+    $('.landing-text').click( function () {
+        $('html, body').animate({scrollTop: $('#section1').offset().top}, 'slow');
+        return false
     })
 
 });
