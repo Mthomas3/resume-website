@@ -2,41 +2,70 @@
 @import "genericMixin.scss";
 
 @mixin SetUpHomeButton() {
+
   .scroll-button-entry{
     position: absolute;
-    bottom: 4%;
-    width: 10px;
-    height: 10px;
-    border-left: 2px solid $grey;
-    border-bottom: 2px solid $grey;
+    bottom: 5.3%;
+    width: 24px;
+    height: 24px;
+    border-left: 4px solid #585858;
+    border-bottom: 4px solid #585858;
     -webkit-transform: rotateZ(-45deg);
     transform: rotateZ(-45deg);
+    animation: moveButton 3.0s infinite;
+  }
+
+
+  .button{
+    display: inline-block;
+
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid rgba(255,255,255,.5);
+    border-bottom: 2px solid rgba(255,255,255,.5);
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+    animation: moveButton 3.0s infinite;
     cursor: pointer;
   }
 
-  .scrolling-title {
+  .buttons {
+    z-index: 2;
     position: absolute;
-    bottom: 6%;
+    bottom: 40px;
+    left: 0px;
+    width: 100%;
+    text-align:center;
+  }
+
+  .scrolling-title {
+
+    position: absolute;
+    bottom: 65px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    color: rgba(255,255,255,.5);
     font-size: 1em;
-    width: 140px;
-    height: 20px;
-    color: $grey;
     cursor: pointer;
   }
+
 }
 
 @mixin SetSectionHome() {
 
-  .home{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: $primary-color;
-    text-align: center;
-    @include SetSizeSection();
+  #section0 {
+    background-color: black;
   }
 
+  .landing {
+
+    text-align: center;
+    width: 100%;
+    height: 350px;
+    //height: 500px;
+    overflow: hidden;
+  }
 
   .landing-text {
     position: relative;
@@ -50,14 +79,13 @@
     text-align: center;
     display: block;
     width: 100%;
-    height: 250px;
+    height: 500px;
     margin-top: -125px;
-    cursor: pointer
+    cursor: pointer;
   }
 
   .site-title {
     text-transform: uppercase;
-    font-style: italic;
     font-size: 6em;
     line-height: 1em;
     text-shadow: 1px 1px 0px black;
@@ -65,10 +93,11 @@
 
   .sub-site-title {
     text-transform: uppercase;
-    font-size: 2em;
+    font-style: italic;
+    font-size: .5em;
     text-shadow: 1px 1px 0px black;
-    margin: 0 0 50px 0;
-    line-height: 1.8em
+    line-height: 1.8em;
+    color: $white;
   }
 
   @include SetUpHomeButton();

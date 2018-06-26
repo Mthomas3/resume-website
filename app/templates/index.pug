@@ -1,26 +1,25 @@
 doctype html
 html(lang="en")
     head
-        include includes/header.pug
+        include includes/header
 
     body
+        #fullpage
+            #section0.section
+                .landing
+                    .landing-text
+                        h1.site-title Thomas Martins
+                            .sub-site-title Available for internship
 
-        section.home
-            .landing-text
-                h1.site-title Thomas Martins
-                .sub-site-title Available for internship
+                p.scrolling-title Scroll to continue
+                .buttons
+                    .button.discover-button
 
-
-            p.scrolling-title Scroll to continue
-
-            .scroll-button-entry
-                button.scroll
-
-
-        section.about
-            p there you go
-
-
-    script(src='js/main.js')
+            #section1.section
+                #test.h1 Clickable
+                p You can even click on the navigation and jump directly to another section.
+            #section2.section
+                h1 Enjoy it
 
 
+    script(type='text/javascript', src='js/main.js')
