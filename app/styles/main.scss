@@ -33,3 +33,19 @@ body{
 @include SetSectionHome();
 @include SetSectionAbout();
 @include SetResponsive();
+
+
+@keyframes testAnim {
+  0% {opacity: 0;}
+  25% {opacity: 0.2;}
+  50% {opacity: 0.5;}
+  75% {opacity: 0.8;}
+  100% {opacity: 1;}
+
+
+}
+
+.landing-text {
+  animation-name: testAnim;
+  animation-duration: 4s;
+}
