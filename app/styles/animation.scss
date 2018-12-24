@@ -1,0 +1,36 @@
+@mixin AnimationButton($time) {
+  @keyframes display {
+    0% {opacity: 0;}
+    100%{opacity: 100%}
+  }
+  .buttons {
+    animation: display $time forwards;
+  }
+  .scrolling-title {
+    animation: display $time forwards;
+  }
+}
+
+@mixin AnimationTitle ($time) {
+  @keyframes animationTitle {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  .landing-text {
+    animation: animationTitle $time linear;
+  }
+}
+
+@mixin AnimationFirstPage() {
+  @include AnimationTitle(2s);
+  @include AnimationButton(6s);
+}
+
+@mixin AnimationSecondPage () {}
+@mixin AnimationThirdPage () {}
+
+@mixin SetAnimation() {
+  @include AnimationFirstPage();
+  @include AnimationSecondPage();
+  @include AnimationThirdPage();
+}

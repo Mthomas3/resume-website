@@ -86,6 +86,23 @@
     text-shadow: 1px 1px 0px black;
   }
 
+  .contact-home {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: .2em;
+    text-shadow: 1px 1px 0px black;
+    line-height: 1.5em;
+    color: $white;
+    button {
+      background-color: black;
+      i {
+        padding-right: 10px;
+        padding-left: 7px;
+      }
+    }
+  }
+
+
   .sub-site-title {
     text-transform: uppercase;
     font-style: italic;

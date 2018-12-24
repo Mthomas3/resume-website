@@ -1,0 +1,14 @@
+@mixin UpdateLib() {
+  #fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: white !important;
+  }
+
+  @keyframes menuAnimation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  #fp-nav ul{
+    opacity: 1;
+  }
+}
