@@ -3,35 +3,24 @@
 @mixin displayGridIcons() {
 
   .flex-container {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    -webkit-flex-flow: row wrap;
-
   }
 
   .flex-item {
-    background: tomato;
-    padding: 5px;
-    width: 200px;
-    height: 150px;
-    margin-top: 10px;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+    margin-top: 35px;
 
-    line-height: 150px;
     color: white;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 5em;
     text-align: center;
+    align-items: center;
     p {
-      
+      font-size: .3em;
     }
   }
 }
@@ -39,7 +28,7 @@
 @mixin SetSectionAbout() {
 
   #section1 {
-    background: radial-gradient(#0f3150 0,#000 66%);
+    background: radial-gradient(#0f3150 0,#000 90%);
 
     @include displayGridIcons();
   }
