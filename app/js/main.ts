@@ -18,7 +18,7 @@ function removeElement(elementID) {
 }
 
 jQuery(function () {
-    const _button = $('.landing-text')
+    const _button = $('.selector-div ')
 
     function handleScrollingAnimation(index, direction) {
         if (direction === Section.about) {
