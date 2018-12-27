@@ -47,7 +47,6 @@
     cursor: pointer;
   }
 
-
 }
 
 @mixin SetSectionHome() {
@@ -61,8 +60,9 @@
   }
 
   .selector-div {
+
     position: absolute;
-    top: 55%;
+    top: 65%;
     left: 0;
     display: block;
     width: 100%;
@@ -92,7 +92,7 @@
     width: 100%;
     height: 500px;
     margin-top: -125px;
-    cursor: pointer;
+    cursor: default;
   }
 
   .site-title {

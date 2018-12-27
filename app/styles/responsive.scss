@@ -18,6 +18,15 @@ $desktopSize: 992px;
     }
   }
 
+  @media (max-width: 950px) {
+
+    #section2 {
+      .img-entry {
+        display: none;
+      }
+    }
+  }
+
 }
 
 @mixin SetResponsive() {
