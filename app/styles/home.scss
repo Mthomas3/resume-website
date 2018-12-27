@@ -47,6 +47,7 @@
     cursor: pointer;
   }
 
+
 }
 
 @mixin SetSectionHome() {
@@ -102,13 +103,30 @@
     cursor: default;
   }
 
+  .contact-home a {
+    text-decoration: none;
+
+  }
+
+  .contact-home a:hover {
+
+  }
+
   .contact-home {
-    text-transform: uppercase;
-    font-style: italic;
-    font-size: .2em;
-    text-shadow: 1px 1px 0px black;
+    text-transform: none;
+    text-shadow: none;
+    font-weight: normal;
+    font-size: 0.2em;
     line-height: 1.5em;
     color: $white;
+
+    a {
+      text-decoration: none;
+      i {
+        padding-right: 12px;
+        padding-left: 9px;
+      }
+    }
     button {
       background-color: black;
       i {
