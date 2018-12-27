@@ -3,6 +3,7 @@
 @import "responsive.scss";
 @import "animation.scss";
 @import "UpdateLib.scss";
+@import "project.scss";
 
 @mixin reset(){
   margin: 0;
@@ -34,6 +35,7 @@ body{
 
 @include SetSectionHome();
 @include SetSectionAbout();
+@include SetSectionProject();
 @include SetResponsive();
 @include SetAnimation();
 @include UpdateLib();

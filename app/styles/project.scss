@@ -1,0 +1,75 @@
+@import "genericMixin.scss";
+
+
+@mixin SetUpGridProject() {
+  #entries {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .separator-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .separator {
+    height: 2px;
+    width: 300px;
+
+    background-color: white;
+  }
+
+  .entry-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .entry {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+    padding: 25px;
+  }
+
+  .entry > h2 {
+    font-weight: bolder;
+    font-size: 2em;
+    color: #484848;
+    text-align: center;
+    color: white;
+
+  }
+
+  .entry > p {
+    font-weight: lighter;
+    font-size: 1em;
+    color: #484848;
+    margin-top: 15px;
+    text-align: justify;
+    color: white;
+  }
+}
+
+
+@mixin SetSectionProject() {
+
+  #section2 {
+    background: radial-gradient(#0f3150 0,#000 90%);
+
+    @include SetUpGridProject();
+    @include SetSizeSection();
+  }
+
+}
+
+img {
+  background: transparent;
+}

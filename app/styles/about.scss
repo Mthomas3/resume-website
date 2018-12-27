@@ -28,6 +28,8 @@
 @mixin SetSectionAbout() {
 
   #section1 {
+
+    @include SetSizeSection();
     background: radial-gradient(#0f3150 0,#000 90%);
 
     @include displayGridIcons();
